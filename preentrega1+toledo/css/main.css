@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*FIN DEL RESETEO*/
+
+/*ESTILO PARA EL HEADER DE TODAS LAS PAGINAS*/
+
+
+@font-face {
+    font-family: "Montserrat-VariableFont";
+    src: url(./fuentes/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "RubikDirt-Regular";
+    src: url(./fuentes/RubikDirt-Regular.ttf);
+}
+
+body {
+    background-color: rgb(248, 185, 10);
+    font-family: "Montserrat-VariableFont";
+    font-size: 16px;
+}
+
+.barra-navegacion {
+    font-style: italic;
+    background-color: rgb(255, 61, 2);
+    color: aliceblue;
+    padding-top: 15px;
+
+
+}
+
+.menu-navegacion {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    font-size: 20px;
+
+}
+
+.menu-links {
+    text-decoration: none;
+    color: aliceblue;
+    margin: 15px;
+}
+
+.redes {
+    text-decoration: none;
+    margin: 10px;
+    color: aliceblue;
+    font-size: x-large;
+}
+
+hr {
+    display: none;
+}
+
+/* INICIO DE ESTILO PARA EL HEADER DEL INDEX */
+
+#titulo-portada {
+    color: rgb(255, 0, 0);
+    font-size: 60px;
+    text-align: center;
+    font-family: "RubikDirt-Regular";
+}
+
+.imagen-portada {
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.descripcion-portada {
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 15px;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*FIN DEL ESTILO PARA HEADER DEL INDEX*/
+
+
+/*INICIO ESTILO PARA MAIN DEL INDEX*/
+
+article {
+    text-align: center;
+}
+
+.bloques {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+
+}
+
+.bloques-texto {
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.bloques-eleccion {
+    border-style: double;
+    background-color: rgb(255, 61, 2);
+    list-style-type: none;
+}
+
+/*FIN DEL ESTILO DEL MAIN DEL INDEX*/
+
+/*INICIO DEL ESTILO DEL MAIN PAG CONTACTO*/
+.form-msj {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
+    color: black;
+    letter-spacing: 1px;
+}
+
+#formulario {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    margin-top: 50px;
+    width: 300px;
+    background-color: rgb(245, 225, 189);
+    border-radius: 30px;
+    padding: 30px;
+}
+
+textarea,
+input {
+    outline: none;
+    border: solid 4x #ccc;
+}
+
+textarea:focus {
+    border-color: red;
+}
+
+
+input:focus {
+    border-color: red;
+}
+
+.boton-enviar {
+    background-color: rgb(255, 61, 2);
+    padding: 10px;
+    width: 240px;
+}
+
+.main-contacto {
+    display: flex;
+    justify-content: space-around;
+}
+
+iframe {
+    margin-top: 70px;
+    border-radius: 15px;
+}
+
+/*FIN DEL ESTILO MAIN PAG CONTACTO*/
+/* INICIO DEL ESTILO MAIN PAG MARCAS*/
+.eleccion-marcas {
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: 50px 250px;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+
+}
+
+.borde {
+    border: solid 3px;
+
+}
+
+.borde-uno {
+    border: none;
+
+}
+
+.texto {
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    font-family: "RubikDirt-Regular";
+    border-radius: 8px;
+}
+
+/* FIN DEL ESTILO MAIN PAG MARCAS*/
+/* INICIO DEL ESTILO MAIN PAG ENVIOS*/
+
+
+
+#titulo-qs {
+    font-family: "RubikDirt-Regular";
+    padding: 21px;
+
+}
+
+.titulo-qs {
+    font-family: "RubikDirt-Regular";
+    padding: 21px;
+
+}
+
+
+/* INICIO DEL ESTILO MAIN PAG MARCAS*/
+.img-envios{
+    margin-left: 75px;
+}
+.contenedor {
+    margin: 50px;
+    text-align: center;
+
+}
+
+.grid-envios {
+    display: grid;
+    padding: 40px;
+    grid-template-areas:
+        "tituloe tituloe tituloe"
+        "num1 uno uno"
+        "num1 descripu descripu"
+        "num1 descripu descripu"
+        "num2 dos dos "
+        "num2 descripd descripd"
+        "num2 descripd descripd"
+        "num3 tres tres"
+        "num3 descript descript"
+        "num3 descript descript";
+
+    grid-template-rows: 1fr 1fr 1fr 2fr 1fr 1fr 2fr 1fr 1fr 2fr;
+    grid-template-columns: 10% auto;
+
+
+}
+
+.border-e {
+    border: solid 1px white;
+
+}
+
+.tituloe {
+    grid-area: tituloe;
+    font-family: "RubikDirt-Regular";
+    font-size: 40px;
+    background-color: rgb(255, 61, 2);
+
+}
+
+.num1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: num1;
+    font-size: 50px;
+    font-family: "RubikDirt-Regular";
+    border-radius: 60px;
+    background-color: red;
+    color: antiquewhite;
+}
+
+.uno {
+    grid-area: uno;
+    font-style: italic;
+    font-size: large;
+    font-weight: bold;
+    padding: 5px;
+    background-color: rgb(255, 61, 2);
+}
+
+.descripu {
+    grid-area: descripu;
+    text-align: start;
+    font-size: medium;
+    padding: 10px;
+}
+
+.num2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: num2;
+    font-size: 50px;
+    font-family: "RubikDirt-Regular";
+    border-radius: 60px;
+    background-color: red;
+    color: antiquewhite;
+
+}
+
+.dos {
+    grid-area: dos;
+    font-style: italic;
+    font-size: large;
+    font-weight: bold;
+    padding: 5px;
+    background-color: rgb(255, 61, 2);
+
+
+}
+
+.descripd {
+    grid-area: descripd;
+    text-align: start;
+    font-size: medium;
+    padding: 10px;
+
+
+}
+
+.num3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: num3;
+    font-size: 50px;
+    font-family: "RubikDirt-Regular";
+    border-radius: 60px;
+    background-color: red;
+    color: antiquewhite;
+}
+
+.tres {
+    grid-area: tres;
+    font-style: italic;
+    font-size: large;
+    font-weight: bold;
+    padding: 5px;
+    background-color: rgb(255, 61, 2);
+}
+
+.descript {
+    grid-area: descript;
+    text-align: start;
+    font-size: medium;
+    padding: 10px;
+}
+
+/*INICIO ESTILO FOOTER*/
+
+.footer-titulos {
+    margin-bottom: 15px;
+}
+
+footer {
+    position: fixed 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    background-color: rgb(255, 61, 2);
+    color: aliceblue;
+    font-style: italic;
+}
+
+/*FIN ESTILO FOOTER*/
